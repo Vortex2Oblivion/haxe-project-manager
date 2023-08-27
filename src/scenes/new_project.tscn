@@ -47,5 +47,12 @@ offset_right = 374.0
 offset_bottom = 638.0
 text = "Create"
 
+[node name="Button" type="Button" parent="."]
+offset_left = 1120.0
+offset_right = 1152.0
+offset_bottom = 32.0
+text = "X"
+
 [connection signal="pressed" from="Add Item Button" to="." method="_on_add_item_button_pressed"]
 [connection signal="pressed" from="Create" to="." method="_on_create_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

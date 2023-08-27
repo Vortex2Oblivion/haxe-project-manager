@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://k3vnt5bn26vu"]
+[gd_scene load_steps=3 format=3 uid="uid://k3vnt5bn26vu"]
 
 [ext_resource type="PackedScene" uid="uid://cnqh2lut4ib7g" path="res://src/scenes/folder_open.tscn" id="1_k4fvh"]
 [ext_resource type="Script" path="res://src/scripts/main.gd" id="1_quvll"]
-[ext_resource type="PackedScene" uid="uid://03sxln3y2att" path="res://src/scenes/new_project.tscn" id="3_h0vrl"]
 
 [node name="Main" type="Node2D"]
 position = Vector2(8, 8)
@@ -31,11 +30,6 @@ offset_right = 120.0
 offset_bottom = 66.0
 text = "Import Project"
 metadata/_edit_use_anchors_ = true
-
-[node name="New Project" parent="." instance=ExtResource("3_h0vrl")]
-visible = false
-position = Vector2(-8, -8)
-scale = Vector2(1, 1.00464)
 
 [connection signal="pressed" from="New Project Button" to="." method="_on_new_project_button_pressed"]
 [connection signal="pressed" from="Import Project Button" to="." method="_on_button_pressed"]

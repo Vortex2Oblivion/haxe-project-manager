@@ -1,0 +1,32 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Haxe Project Manager"
+config/description="Easily manage Haxe projects with this tool!"
+config/tags=PackedStringArray("2d", "haxe", "manager", "tool")
+run/main_scene="res://src/scenes/main.tscn"
+config/features=PackedStringArray("4.1", "GL Compatibility")
+boot_splash/show_image=false
+boot_splash/fullsize=false
+boot_splash/use_filter=false
+config/icon="res://assets/haxe-logo.png"
+config/windows_native_icon="res://assets/haxe-logo.ico"
+
+[display]
+
+window/size/resizable=false
+window/size/no_focus=true
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

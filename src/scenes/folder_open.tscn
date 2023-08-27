@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://cnqh2lut4ib7g"]
+
+[node name="Folder Open" type="FileDialog"]

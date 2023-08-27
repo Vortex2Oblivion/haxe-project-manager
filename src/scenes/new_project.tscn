@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=3 uid="uid://03sxln3y2att"]
+
+[ext_resource type="Script" path="res://src/scripts/new_project.gd" id="1_0lrws"]
+
+[node name="New Project" type="Node2D"]
+script = ExtResource("1_0lrws")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 647.0
+color = Color(0, 0, 0, 0.486275)
+
+[node name="ItemList" type="ItemList" parent="."]
+offset_top = 64.0
+offset_right = 307.0
+offset_bottom = 111.0
+auto_height = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_right = 237.0
+offset_bottom = 25.0
+text = "Libraries:"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_top = 30.0
+offset_right = 307.0
+offset_bottom = 62.0
+placeholder_text = "Add library here:"
+
+[node name="Add Item Button" type="Button" parent="."]
+offset_left = 309.0
+offset_top = 30.0
+offset_right = 341.0
+offset_bottom = 62.0
+text = "+"
+
+[node name="Path" type="TextEdit" parent="."]
+offset_top = 606.0
+offset_right = 307.0
+offset_bottom = 638.0
+placeholder_text = "Path:"
+
+[node name="Create" type="Button" parent="."]
+offset_left = 314.0
+offset_top = 606.0
+offset_right = 374.0
+offset_bottom = 638.0
+text = "Create"
+
+[connection signal="pressed" from="Add Item Button" to="." method="_on_add_item_button_pressed"]
+[connection signal="pressed" from="Create" to="." method="_on_create_pressed"]
